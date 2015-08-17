@@ -345,8 +345,6 @@ Matrix::Matrix(const Matrix& mat)
 			SetElemAt(i, j, value);
 		}
 	}
-
-	std::cout << "Matrix(const Matrix& mat)" << std::endl;
 }
 
 
@@ -370,8 +368,6 @@ const Matrix& Matrix::operator=(const Matrix& mat)
 			this->SetElemAt(i, j, value);
 		}
 	}
-
-	std::cout << "operator=" << std::endl;
 	return *this;
 }
 
